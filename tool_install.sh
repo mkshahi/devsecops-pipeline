@@ -10,3 +10,6 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
+sudo apt-get install docker.io -y
+sudo usermod -a -G docker $(whoami)
+
